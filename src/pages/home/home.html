@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<ion-split-pane>
+  <ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="open('NewsPage')" menuclose>News</button>
+      <button ion-item (click)="open('NewsPage')" menuclose>News</button>
+      </ion-list>
+  </ion-content>      
+</ion-menu>
+<ion-nav main [root]="rootPage" #content swipeBackEnabled="false" ></ion-nav>
+</ion-split-pane>
+
+
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content> -->
